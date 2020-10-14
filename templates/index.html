@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Organic Food</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+	<!-- Framework Css -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/bootstrap.min.css') }}">
+	<!-- Font Awesome / Icon Fonts -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/font-awesome.min.css') }}">
+	<!-- Owl Carousel / Carousel- Slider -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/owl.carousel.min.css') }}">
+	<!-- Video YouTube -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/lazyYT.min.css') }}">
+	<!-- Carousel- Slider / Vertical -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/lib/slick.css') }}">
+	<!-- Style Theme -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+	<!-- Responsive Theme -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='/css/responsive.css') }}">
+</head>
+<body>
+<div class="wrapper">
+	<!--===================== Header ========================-->
+	<header>
+		<div class="container-large header">
+			<div class="row">
+				<div class="col-md-5 col-sm-4 col-xs-4">
+					<ul class="menu">
+						<li><a href="{{ url_for('index')}}">home</a></li>
+						<li class="mega-menu-top">
+							<a href="#">Features</a>
+							<div class="mega-menu columns-4">
+								<ul>
+									<li class="first">Fruit &amp; Veg</li>
+									<li><a href="#">Fruit</a></li>
+									<li><a href="#">Veg</a></li>
+									<li><a href="#">Salad</a></li>
+									<li><a href="#">Organic</a></li>
+								</ul>
+								<ul>
+									<li class="first">Dairy</li>
+									<li><a href="#">Milk</a></li>
+									<li><a href="#">Cheese</a></li>
+									<li><a href="#">Yoghurt</a></li>
+									<li><a href="#">Cream</a></li>
+								</ul>
+								<ul>
+									<li class="first">Frozen</li>
+									<li><a href="#">Frozen Vegetables</a></li>
+									<li><a href="#">Frozen Desserts &amp; Bakery</a></li>
+									<li><a href="#">Frozen Seafood</a></li>
+									<li><a href="#">Frozen Fruit</a></li>
+									<li><a href="#">Ice</a></li>
+								</ul>
+							</div><!--mega-menu-->
+						</li><!--children-->
+						<li class="children">
+							<a href="about.html">About</a>
+							<ul class="sub-menu">
+								<li><a href="#">Why Choose Us?</a></li>
+								<li><a href="#">Organic Leadership Awards</a></li>
+								<li><a href="#">Verification &amp; Certification</a></li>
+								<li><a href="#">Organic Standards</a></li>
+							</ul><!--sub-menu-->
+						</li>
+					</ul><!--menu-->
+					<button type="button" class="menu-button">
+						<span></span>
+					</button>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-3 text-center">
+					<div class="logo"><a href="{{ url_for('index')}}"><img src="static/images/logo.png" alt="logo"></a></div>
+				</div>
+				<div class="col-md-5 col-sm-5 col-xs-5 text-right">
+					<ul class="info-header">
+						<li><a href="#"><i class="fa fa-volume-control-phone"></i>+90-555-555-55-55</a></li>
+						<li class="search-icon"><a href="#"><i class="fa fa-address-card"></i>contact us</a></li>
+					</ul><!--info-header-->
+					<ul class="social-icon">
+						<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li class="tumblr"><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						<li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul><!--social-icon-->
+				</div>
+			</div>
+			<form class="search">
+				<input type="text" placeholder="Search...">
+				<span class="close"><img src="static/images/close2.png" alt="close"></span>
+			</form>
+		</div>
+	</header>
+	<!--============== End of Header ========================-->
+	<!--===================== Base-Slider ========================-->
+	<div class="base-slider owl-carousel owl-theme">
+		<div class="item">
+			<img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/slider.jpg" alt="slider">
+			<div class="text-slider">
+				<h2>Nature has always<br>cared for us!</h2>
+			</div><!--text-slider-->
+		</div><!--item-->
+	</div>
+
+	<!--================== End of Base-Slider ====================-->
+	<!--=================== Category Product =====================-->
+	<div class="container">
+		<div class="category-product">
+			<ul>
+				<li>
+					<a href="shop.html">
+						<img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/groceries.png" alt="groceries">
+						<span>Natural</span>
+					</a>
+				</li>
+				<li class="center">
+					<a href="shop.html">
+						<img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/pineapple.png" alt="pineapple">
+						<span>organic</span>
+					</a>
+				</li>
+				<li>
+					<a href="shop.html">
+						<img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/corn.png" alt="corn">
+						<span>health</span>
+					</a>
+				</li>
+			</ul>
+		</div><!--category-product-->
+	</div>
+	<!--=============== End of Category Product ==================-->
+	<!--=================== Product Slider =======================-->
+	<div class="container-large">
+		<div class="product-slider">
+			<div class="title-head">
+				<h2 class="text-black">What's Trending</h2>
+				<p>Be Healty Organic Food</p>
+			</div>
+			<div class="slider-product owl-carousel owl-theme">
+				<div class="item">
+					<div class="product">
+						<div class="images text-center">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product1.png" alt="product1"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Daiya - Cheddar</a>
+							<span class="price">$20</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="item">
+					<div class="product">
+						<div class="images text-center">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product2.png" alt="product2"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Vegan Burger - Veggie Mix</a>
+							<span class="price">$9.99</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="item">
+					<div class="product">
+						<div class="images text-center">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product3.png" alt="product3"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Vegan Protein</a>
+							<span class="price">$50</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="item">
+					<div class="product">
+						<div class="images text-center">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product4.png" alt="product4"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Over the Moo - Ice Cream</a>
+							<span class="price">$7.99</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+			</div><!--slider-product-->
+			<div class="text-center">
+				<a href="shop.html" class="custom-btn text-center green"><span>View the store</span></a>
+			</div>
+		</div><!--product-slider-->
+	</div>
+
+	<div class="container-large">
+		<div class="grid-product">
+			<div class="title-head">
+				<h2 class="text-black">Our Products</h2>
+				<p>Be Healty Organic Food</p>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product5.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">ORS - Olive Oil</a>
+							<span class="price">
+								<del>$9.99</del>
+								<ins>$6.99</ins>
+							</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product12.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Organic - Agave Five</a>
+							<span class="price">$9.99</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product6.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Organic Girl - Romanie</a>
+							<span class="price">$4.79</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product7.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Beach Nut - Coldpure</a>
+							<span class="price">$6.49</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product8.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Beech Nut - Just Pumpkin</a>
+							<span class="price">$9.69</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product9.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Detox Zero</a>
+							<span class="price">$16.99</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product10.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Mooala Original</a>
+							<span class="price">$10.99</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="product">
+						<div class="images">
+							<a href="{{ url_for('single_product')}}"><img src="https://cinagro-html.fruitfulcode.com/wp-content/themes/cinagro-html/assets/images/product11.png" alt="product5"></a>
+							<div class="button-group">
+								<a href="{{ url_for('single_product')}}" class="custom-btn pink"><i class="fa fa-search"></i></a>
+							</div><!--button-group-->
+						</div><!--images-->
+						<div class="info-product">
+							<a href="{{ url_for('single_product')}}" class="title">Low Cow - Lite Ice Cream</a>
+							<span class="price">$9.99</span>
+						</div><!--info-product-->
+					</div><!--product-->
+				</div>
+			</div>
+			<div class="text-center"><a href="shop.html" class="custom-btn text-center green">VIEW THE STORE</a></div>
+		</div><!--grid-product-->
+	<!--===================== Footer ========================-->
+<!--================= End of Footer =====================-->
+</div><!--wrapper-->
+<script src="{{ url_for('static', filename='js/lib/jquery.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/bootstrap.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/owl.carousel.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/jquery-ui.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/TweenMax.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/lazyYT.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/masonry.pkgd.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/jquery.filterizr.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/slick.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/jquery.counterup.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/lib/waypoints.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
