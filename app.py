@@ -9,5 +9,3 @@ def index():
 def single_product():
     return render_template('single-product.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
